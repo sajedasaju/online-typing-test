@@ -7,15 +7,18 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
+
         .keyboard {
             display: inline-block;
             margin: 0 auto;
         }
+
         .row {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
         }
+
         .key {
             width: 40px;
             height: 40px;
@@ -25,13 +28,18 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            background: white;
+            transition: background 0.4s ease-in-out;
         }
         .key:hover {
-            background-color: #f0f0f0;
+            background: #f0f0f0;
         }
     </style>
 </head>
 <body>
+<div class="sample-text">
+    <p id="text-to-practice">A Quick Brown Fox Jump Over The Lazy Dog.</p>
+</div>
 <div class="keyboard">
     <div class="row">
         <div class="key">~<br>`</div>
@@ -95,17 +103,17 @@
         <div class="key" style="width: 124px">Shift</div>
     </div>
     <div class="row">
-        <div class="key">Ctrl</div>
-        <div class="key">Fn</div>
-        <div class="key">Win</div>
-        <div class="key">Alt</div>
+        <div class="key" style="width: 63px">Ctrl</div>
+        <div class="key" style="width: 63px">Alt</div>
         <div class="key" style="width: 300px"></div>
-        <div class="key">Alt</div>
-        <div class="key">Ctrl</div>
+        <div class="key" style="width: 63px">Alt</div>
+        <div class="key" style="width: 63px">Ctrl</div>
         <div class="key">&lt;</div>
         <div class="key">^</div>
         <div class="key">&gt;</div>
     </div>
 </div>
+
+<script src="/script.js"></script>
 </body>
 </html>
